@@ -1,0 +1,25 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Here is the basic landing web page template using HTML, CSS, Bootstrap and JS. In this project configured Slick Carousel and different behavior using custom data attribute.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanazafar821/landing-page.git"
+  },
+  "author": "Sana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanazafar821/landing-page/issues"
+  },
+  "homepage": "https://github.com/sanazafar821/landing-page#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4"
+  }
+}

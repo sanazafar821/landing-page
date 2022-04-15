@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <title>Landing Page</title>
 </head>
 
@@ -28,8 +27,8 @@
                     <ul
                         class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-lg-center justify-content-start align-itemslg-center align-items-start w-100">
                         <li class="nav-item">
-                            <a class="text-decoration-none active fw-bold text-dark mb-lg-0 mb-3"
-                                aria-current="page" href="#">Home</a>
+                            <a class="text-decoration-none active fw-bold text-dark mb-lg-0 mb-3" aria-current="page"
+                                href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-decoration-none  fw-bold text-dark" href="#">Workspace</a>
@@ -66,7 +65,8 @@
             </div>
             <div class="row pd_l">
                 <div class="col-lg-7 col-12">
-                    <h1 class="fw-bold primary text-lg-start text-center title"><span class="secondary">Revolutionary</span>
+                    <h1 class="fw-bold primary text-lg-start text-center title"><span
+                            class="secondary">Revolutionary</span>
                         co-working space to realize
                         your innovation</h1>
                 </div>
@@ -369,8 +369,8 @@
             <div class="d-flex align-items-start flex-md-row flex-column">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a href="#" class="nav-link active text-dark base_button fw-bold d-block mb-3" id="v-pills-home-tab"
-                        data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab"
-                        aria-controls="v-pills-home" aria-selected="true">Spacious
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Spacious
                         parking area</a>
                     <a href="#" class="nav-link text-dark base_button fw-bold d-block mb-3" id="v-pills-profile-tab"
                         data-bs-toggle="pill" data-bs-target="#v-pills-profile" role="tab"
@@ -849,133 +849,10 @@
     </footer>
     <!-- Footer End-->
 
-    <!-- <script src="js/main.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="fontawesome/js/all.min.js"></script>
-    <script>
-        jQuery("#carousel").owlCarousel({
-            autoplay: true,
-            lazyLoad: true,
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 7000,
-            smartSpeed: 800,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                600: {
-                    items: 1
-                },
-
-                1024: {
-                    items: 1
-                },
-
-                1366: {
-                    items: 1
-                }
-            }
-        });
-        jQuery("#carousel2").owlCarousel({
-            autoplay: true,
-            lazyLoad: true,
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 7000,
-            smartSpeed: 800,
-            nav: true,
-            arrow: true,
-            navigation: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                600: {
-                    items: 1
-                },
-
-                1024: {
-                    items: 3
-                },
-
-                1366: {
-                    items: 3
-                }
-            }
-        });
-        jQuery("#carousel3").owlCarousel({
-            autoplay: false,
-            lazyLoad: true,
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 7000,
-            smartSpeed: 800,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                600: {
-                    items: 1
-                },
-
-                1024: {
-                    items: 3
-                },
-
-                1366: {
-                    items: 3
-                }
-            }
-        });
-        jQuery("#carousel4").owlCarousel({
-            center: true,
-            stagePadding: 50,
-            autoplay: false,
-            lazyLoad: true,
-            dots: true,
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 7000,
-            smartSpeed: 800,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                600: {
-                    items: 1
-                },
-
-                1024: {
-                    items: 5
-                },
-
-                1366: {
-                    items: 5
-                },
-                1400: {
-                    items: 5
-                }
-            }
-        });
-    </script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
