@@ -54,10 +54,11 @@ jQuery("#carousel2").owlCarousel({
     }
 });
 jQuery("#carousel3").owlCarousel({
-    autoplay: false,
+    autoplay: true,
     lazyLoad: true,
     loop: true,
     margin: 20,
+    dots: false,
     responsiveClass: true,
     autoHeight: true,
     autoplayTimeout: 7000,
@@ -69,7 +70,7 @@ jQuery("#carousel3").owlCarousel({
         },
 
         600: {
-            items: 1
+            items: 2
         },
 
         1024: {
@@ -86,7 +87,7 @@ jQuery("#carousel4").owlCarousel({
     // stagePadding: 50,
     autoplay: false,
     lazyLoad: true,
-    dots: true,
+    dots: false,
     loop: true,
     margin: 20,
     responsiveClass: true,
@@ -100,7 +101,7 @@ jQuery("#carousel4").owlCarousel({
         },
 
         600: {
-            items: 1
+            items: 3
         },
 
         1024: {
@@ -126,8 +127,6 @@ jQuery("#brands").owlCarousel({
     autoplayTimeout: 7000,
     smartSpeed: 800,
     // nav: true,
-    // arrow: true,
-    // navigation: true,
     responsive: {
         320: {
             items: 2

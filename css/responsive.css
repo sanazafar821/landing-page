@@ -5,7 +5,6 @@
 }
 
 @media (max-width: 991.98px) {
-
     /* Navbar */
     .navbar {
         background-color: var(--gray-100);
@@ -70,6 +69,26 @@
         width: 450px !important;
         object-fit: cover;
         object-position: center;
+    }
+    /* Gallery */
+    .gallery-slider .owl-nav button.owl-prev {
+        left: 10px;
+    }
+    .gallery-slider .owl-nav button.owl-next {
+        left: 80px;
+    }
+    /* Faq */
+    .faq-text {
+        padding: 0;
+    }
+    /* Events */
+    .eventImg {
+        height: 200px !important;
+    }
+    /* contact */
+    .pattern {
+        width: 300px;
+        margin: 0 auto;
     }
 }
 
