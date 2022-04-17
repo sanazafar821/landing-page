@@ -16,39 +16,43 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="bg-white fixed-top navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="text-decoration-none fw-bold primary fs-5 nav-brand" href="#">Frispes.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-brand d-lg-none" href="#">Frispes.</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul
-                        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-lg-center justify-content-start align-itemslg-center align-items-start w-100">
+
+                <div id="mainNav" class="collapse navbar-collapse justify-content-lg-between">
+                    <a class="nav-brand d-none d-lg-block" href="#">Frispes.</a>
+
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="text-decoration-none active fw-bold text-dark mb-lg-0 mb-3" aria-current="page"
+                            <a class="nav-link active" aria-current="page"
                                 href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none  fw-bold text-dark" href="#workspace">Workspace</a>
+                            <a class="nav-link" href="#workspace">Workspace</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none  fw-bold text-dark" href="#service">Service</a>
+                            <a class="nav-link" href="#service">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none  fw-bold text-dark" href="#events">Events</a>
+                            <a class="nav-link" href="#events">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none  fw-bold text-dark" href="#reviews">Reviews</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none  fw-bold text-dark" href="#contact">Contact Us</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="d-flex align-items-center">
-                        <a href="#" class="fw-bold text-decoration-none py-2 px-lg-4 base_button btnTxt me-2">Login</a>
-                        <a href="#" class="fw-bold text-decoration-none py-2 px-4 base_button btnTxt active">Signup</a>
+
+                    <form class="d-flex">
+                        <button class="btn btn-link" type="button">Login</button>
+                        <button class="btn btn-link active" type="button">Sign up</button>
                     </form>
                 </div>
             </div>
@@ -57,32 +61,49 @@
     <!-- Header End-->
 
     <!-- Hero section -->
-    <section id="home">
-        <div class="container mt-5">
-            <div class="d-flex align-items-center mt-4 mb-3 pd_l">
-                <span class="text-dark me-3">Introducing</span>
-                <img src="images/bar.png" alt="">
-            </div>
-            <div class="row pd_l">
-                <div class="col-lg-7 col-12">
-                    <h1 class="fw-bold primary text-lg-start text-center title"><span
-                            class="secondary">Revolutionary</span>
+    <section id="home" class="intro">
+        <!-- Introduction -->
+        <div class="container">
+            <p class="fancy-label mt-5 mt-lg-0">Introducing</p>
+
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-6">
+                    <h1 class="">
+                        <span class="text-warning">Revolutionary</span>
                         co-working space to realize
-                        your innovation</h1>
+                        your innovation
+                    </h1>
                 </div>
-                <div class="col-lg-5 col-12">
-                    <p class="text-muted text-lg-start text-center detailTxt">
+
+                <div class="col-12 col-md-5 col-lg-3 ms-lg-auto">
+                    <p class="text-muted">
                         In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow
                         their opportunities in key local, regional and global markets
                     </p>
                 </div>
-
-
             </div>
         </div>
-        <div class="w-100 d-flex flex-lg-row flex-column-reverse mt-2">
-            <div class="leftSection">
-                <form class="searchForm px-4 py-5 mb-lg-0 mb-4" action="">
+
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-end">
+            <div class="col-12 col-lg-8 p-0">
+                <!-- Owl Carousel -->
+                <div id="carousel" class="owl-carousel">
+                    <div class="item">
+                        <img class="owl-lazy sliderImg" data-src="images/img1.png" alt="Slide Image">
+                    </div>
+
+                    <div class="item">
+                        <img class="owl-lazy sliderImg" data-src="images/img2.jpeg" alt="Slide Image">
+                    </div>
+
+                    <div class="item">
+                        <img class="owl-lazy sliderImg" data-src="images/img3.png" alt="Slide Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-search">
+                <form class="searchForm">
                     <h3 class="text-white fw-bold mb-4 searchFormTitle">Find your space now</h3>
                     <div class="form-field mb-3 px-3 py-1">
                         <span class="text-muted p-0 m-0">Location</span>
@@ -121,21 +142,6 @@
                         my space</button>
                 </form>
             </div>
-            <div class="rightSection">
-                <div class="owl-slider-1 mg-left">
-                    <div id="carousel" class="owl-carousel">
-                        <div class="item">
-                            <img class="owl-lazy sliderImg" data-src="images/img1.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="owl-lazy sliderImg" data-src="images/img2.jpeg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="owl-lazy sliderImg" data-src="images/img3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- Hero section End-->
@@ -162,7 +168,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">
@@ -181,7 +187,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">
@@ -200,7 +206,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">
@@ -219,7 +225,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">
@@ -238,7 +244,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">
@@ -257,7 +263,7 @@
                                     class="text-decoration-none arrow py-3 px-4 d-flex justify-content-between align-items-center">
                                     <span class="text-white sliderTxt me-3 lato-bold">check availability</span>
                                     <i class="fa-solid fa-caret-right text-white"></i>
-                                    
+
                                 </a>
                                 <div class="overlay d-flex justify-content-center align-items-center flex-column">
                                     <img class="maskImg" src="images/mask.png" alt="">

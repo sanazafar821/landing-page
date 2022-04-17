@@ -7,7 +7,7 @@ jQuery("#carousel").owlCarousel({
     autoHeight: true,
     autoplayTimeout: 7000,
     smartSpeed: 800,
-    nav: true,
+    nav: false,
     responsive: {
         320: {
             items: 1
@@ -35,7 +35,8 @@ jQuery("#carousel2").owlCarousel({
     autoHeight: true,
     autoplayTimeout: 7000,
     smartSpeed: 800,
-    nav: true,
+    nav: false,
+    dots: false,
     arrow: true,
     navigation: true,
     responsive: {
