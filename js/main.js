@@ -35,19 +35,15 @@ jQuery("#carousel2").owlCarousel({
     autoHeight: true,
     autoplayTimeout: 7000,
     smartSpeed: 800,
-    nav: false,
+    nav: true,
     dots: false,
-    arrow: true,
-    navigation: true,
     responsive: {
         320: {
             items: 1
         },
-
         600: {
-            items: 1
+            items: 2
         },
-
         1024: {
             items: 3
         },

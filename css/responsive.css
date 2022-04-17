@@ -1,8 +1,11 @@
 @media (max-width: 1199.98px) {
-
+    .intro .title {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 991.98px) {
+
     /* Navbar */
     .navbar {
         background-color: var(--gray-100);
@@ -31,6 +34,11 @@
         width: 100%;
     }
 
+    /* Intro section */
+    .intro .title {
+        font-size: 40px;
+    }
+
     /* Intro Search Form */
     .owl-carousel .sliderImg {
         height: 400px;
@@ -41,10 +49,27 @@
         position: relative;
     }
 
-    .searchForm {
+    .form-search .form-section-container {
         margin: 30px auto 0;
         max-width: 600px;
         padding: 30px 20px;
+    }
+
+    /* carousel controller */
+    .info-slider .owl-nav button.owl-prev {
+        top: -15px;
+    }
+
+    .info-slider .owl-nav button.owl-next {
+        top: -15px;
+    }
+
+    /* Facilities */
+    .sectionImg {
+        height: 400px;
+        width: 450px !important;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -54,6 +79,4 @@
     }
 }
 
-@media (max-width: 575.98px) {
-
-}
+@media (max-width: 575.98px) {}
