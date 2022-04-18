@@ -106,6 +106,19 @@ footer {
     font-size: 20px;
     line-height: 30px;
 }
+/* Generic Arrow right style */
+/* .owl-next:after{
+    content: url('../images/next.svg');
+    margin-left: 20px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+.owl-next:hover::after,
+.owl-next:focus::after  {
+    content: url('../images/next.svg');
+    filter: none !important;
+    opacity: 1;
+} */
 /* Navbar */
 .navbar {
     font-family: var(--ff-primary);
